@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./indexRF.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Random Fight</title>
+</head>
+
+<body>
+    <Header></Header>
+
+    <main class="main">
+        <h1 class="main-title">Random Fight</h1>
+        <div class="parameterContainer">
+            <div class="parameterRow">
+                <p>Nombre de Joueur :</p>
+                <input id="numberOfPlayer" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Nombre de colonnes :</p>
+                <input id="numberOfColumn" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Nombre de lignes :</p>
+                <input id="numberOfLine" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Nombre de personnages :</p>
+                <input id="numberOfCharacter" type="number" value="1">
+            </div>
+        </div>
+        <div class="btnContainer">
+            <button id="btnValidation" class="button" onclick="result()">Valider</button>
+            <button id="btnReset" class="button" onclick="reset()">Réinitialiser</button>
+        </div>
+        </div>
+        <div id="resultat"></div>
+    </main>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
