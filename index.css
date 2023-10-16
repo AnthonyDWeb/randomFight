@@ -40,7 +40,10 @@ main {
 }
 
 .parameterContainer {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
+
 
     .parameterRow {
         display: flex;
@@ -132,11 +135,11 @@ main {
 
     p,
     button {
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
 
     input {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .main-title {
@@ -144,9 +147,15 @@ main {
     }
 
     .parameterContainer {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row; 
+        flex-wrap: wrap;
         width: 100%;
+        justify-content: space-around;
+
+        .parameterRow {
+            flex-grow: 0;
+            margin: 1rem;
+        }
     }
 
     #resultat {
@@ -158,8 +167,17 @@ main {
         overflow-x: hidden;
 
         .divisionContaint {
-            flex-grow: 1;
-            flex-basis: 200px;
+            flex-grow: 0;
+            flex-basis: 30vw;
+            align-items: center;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    p,
+    button,input {
+        font-size: 20px;
     }
 }
